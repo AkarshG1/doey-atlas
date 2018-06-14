@@ -1,0 +1,37 @@
+{
+  "name": "Doey_FrontEnd",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/new",
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
+    "ajv": "^6.0.0",
+    "axios": "^0.18.0",
+    "date-fns": "^2.0.0-alpha.7",
+    "fetch": "^1.1.0",
+    "material-ui": "^1.0.0-beta.38",
+    "material-ui-datetimepicker": "^1.0.7",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "material-ui-pickers": "^1.0.0-rc.3",
+    "moment": "^2.22.2",
+    "npm": "^6.1.0",
+    "rc-slider": "^8.6.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-google-login": "^3.0.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "recharts": "1.0.0-beta.10",
+    "styled-components": "3.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
