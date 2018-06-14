@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
+  "homepage": "https://doey-atlas.herokuapp.com/",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^1.2.0",
