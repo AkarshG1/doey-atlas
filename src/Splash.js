@@ -180,7 +180,7 @@ export default class Splash extends Component{
 
     login(googleResponse){
         let gData;
-        let BaseURL = 'http://localhost:5000/';
+        let BaseURL = 'https://doey-atlas-back-end.herokuapp.com/';
 
         console.log("Logging in");
 
