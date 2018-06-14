@@ -203,16 +203,18 @@ export default class DoeyTab extends Component {
   subTasks() {
     var i;
     var returntags = [];
-    if (this.state.tasks[0]) {
-      for (i = 0; i < this.state.tasks[0].subtasks.length; i++) {
-        returntags[i] = (
-          <SubTask
-            subtaskname={this.state.tasks[0].subtasks[i]}
-            deleteTask={this.deleteSubTask}
-            i={i}
-          />
-        );
-      }
+    if(this.state.tasks){
+        if (this.state.tasks[0]) {
+          for (i = 0; i < this.state.tasks[0].subtasks.length; i++) {
+            returntags[i] = (
+              <SubTask
+                subtaskname={this.state.tasks[0].subtasks[i]}
+                deleteTask={this.deleteSubTask}
+                i={i}
+              />
+            );
+          }
+        }
     }
     return returntags;
   }
