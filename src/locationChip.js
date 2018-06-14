@@ -1,7 +1,6 @@
 import React from 'react';
 import Chip from '@material-ui/core/Chip';
 import Avatar from 'material-ui/Avatar';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Place from 'material-ui-icons/Place';
 
 const styles = {

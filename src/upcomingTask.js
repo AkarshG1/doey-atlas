@@ -1,11 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Button } from "./Buttons.js";
 import {getTime,getDate} from "./dateTimeHelpers.js";
 import Delete from 'material-ui-icons/Delete';
 import Done from 'material-ui-icons/Done';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import {red500, green500, blue500} from 'material-ui/colors';
 
 const UpTask = styled.div`
   border-style: solid;

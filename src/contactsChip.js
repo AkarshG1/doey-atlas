@@ -1,7 +1,6 @@
 import React from 'react';
 import Chip from 'material-ui/Chip';
 import Avatar from 'material-ui/Avatar';
-import Face from 'material-ui-icons/Face';
 
 const styles = {
   chip: {
@@ -18,7 +17,6 @@ const avatarStyles = {
     width: 30
 }
 
-const userAvatar = localStorage.getItem('userData')?JSON.parse(localStorage.getItem('userData')).provider_pic:'';
 function getContacts(contacts) {
   var i;
   var contactlist = [];

@@ -3,10 +3,6 @@ import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
 import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
 import DatePicker from 'material-ui-pickers/DatePicker';
 
-/**
- * `DatePicker` can be implemented as a controlled input,
- * where `value` is handled by state in the parent component.
- */
 export default class DatePicker2 extends React.PureComponent {
 
   constructor(props) {

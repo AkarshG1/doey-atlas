@@ -2,14 +2,8 @@ import React, { Fragment, PureComponent } from 'react';
 import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
 import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
 import { DateTimePicker } from 'material-ui-pickers';
-import { IconButton, Icon, InputAdornment } from '@material-ui/core';
 
-export default class DateTimePicker2 extends PureComponent {
-    constructor(props) {
-      super(props);
-    }
-
-  render() {
+export default function DateTimePicker2(props){
     return (
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <Fragment>
@@ -19,14 +13,14 @@ export default class DateTimePicker2 extends PureComponent {
             disablePast={true}
             minDateMessage={''}
             ampm={false}
-            value={this.props.datetime}
-            onChange={this.props.onTimeChange}
-            label={this.props.text}
-            maxDate={this.props.maxDate}
-            minDate={this.props.minDate}
+            value={props.datetime}
+            onChange={props.onTimeChange}
+            label={props.text}
+            maxDate={props.maxDate}
+            minDate={props.minDate}
           />
         </Fragment>
         </MuiPickersUtilsProvider>
     );
-  }
+
 }

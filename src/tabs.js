@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import {Button} from "./Buttons.js";
-import {NavLink,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import ProfileDrawer from "./sideBar.js";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import {Tabs, Tab} from 'material-ui/Tabs';
@@ -17,23 +17,7 @@ const styles = {
 };
 
 const baseURL = "'https://doey-atlas.herokuapp.com/'";
-const tabs  = {
-    Doey : baseURL + "doey",
-    Plan : baseURL + "plan",
-    Review : baseURL + "review"
-}
-const ProfileButton = Button.extend`
-  background-image : url(${props=>props.avatar});
-  background-size: cover;
-  border-style:solid;
-  border-width:1px;
-  border-color:#0ae;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-`;
 
-//import {Header},{navlinks},{Doey},{Plan},
 const Header = styled.nav`
   background-color: #333;
   overflow: hidden;

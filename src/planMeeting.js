@@ -2,32 +2,15 @@ import React, {Component} from "react";
 import styled from "styled-components";
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
-import Paper from '@material-ui/core/Paper';
-import {GetData} from "./getData.js";
 import {postData} from "./postData.js";
-import DatePicker2 from "./datePicker.js";
-import TimePicker2 from "./timePicker.js";
 import DateTimePicker2 from "./dateTimePicker.js";
 import TextField from '@material-ui/core/TextField';
-import {Redirect} from 'react-router-dom';
-import Dialog, {
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-} from 'material-ui/Dialog';
 import Snackbar from 'material-ui/Snackbar';
 import Button from 'material-ui/Button';
 
 import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-import NativeSelect from '@material-ui/core/NativeSelect';
 import {getDate, getTime } from './dateTimeHelpers.js';
-import InputLabel from '@material-ui/core/InputLabel';
 
 const SubTaskcard = styled.div`
   max-height: 150px;

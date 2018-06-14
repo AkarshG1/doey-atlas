@@ -1,10 +1,5 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import { Button } from "./Buttons.js";
-import Breakdown from "./breakdown.js";
-import Avatar from '@material-ui/core/Avatar';
-import Chip from '@material-ui/core/Chip';
-import Paper from '@material-ui/core/Paper';
 import PlanMeeting from "./planMeeting.js";
 
 const Plan = styled.div`

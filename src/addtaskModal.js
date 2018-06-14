@@ -2,7 +2,6 @@ import React,{Component} from "react";
 import styled from "styled-components";
 import {postData} from "./postData.js";
 import DatePicker2 from "./datePicker.js";
-import TimePicker2 from "./timePicker.js";
 import DateTimePicker2 from "./dateTimePicker.js";
 import TextField from '@material-ui/core/TextField';
 import {Redirect} from 'react-router-dom';
@@ -13,39 +12,6 @@ import Dialog, {
   DialogTitle,
 } from 'material-ui/Dialog';
 import Button from 'material-ui/Button';
-import Checkbox from 'material-ui/Checkbox';
-import PriorityHigh from 'material-ui-icons/PriorityHigh';
-import Alarm from 'material-ui-icons/Alarm';
-
-const AddTaskContainer = styled.div`
-  display:grid;
-`;
-
-const Input = styled.input`
-  margin:5px;
-  border-style:solid;
-  border-color: #ddd;
-  border-width:0.5px;
-  border-radius:3px;
-  color: #555;
-  width:80%;
-  height 30px;
-  justify-self:center;
-  text-align:center;
-  font-size: 24px;
-  margin-top:50px;
-  &:focus{
-    border-color:#fff;
-  }
-`;
-
-const styles = {
-  block: {
-    maxWidth: 250,
-  },
-
-};
-
 
 export default class AddTaskModal extends Component{
     constructor(props){
@@ -126,11 +92,6 @@ export default class AddTaskModal extends Component{
         if (this.state.redirectToDoey) {
               return <Redirect to={'/doey'}/>
             }
-
-        const actions = [
-            <Button primary={true} onClick={this.handleClick} label="Add" />
-
-        ]
 
         return (
             <Dialog

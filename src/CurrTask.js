@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import ProgressCircle from "./circularProgress.js";
 import {getTime,getDate} from "./dateTimeHelpers.js";
 import LocationChip from './locationChip.js';
@@ -8,7 +8,6 @@ import styled from "styled-components";
 
 import Delete from 'material-ui-icons/Delete';
 import CheckCircle from 'material-ui-icons/CheckCircle';
-import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 

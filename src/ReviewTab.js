@@ -1,11 +1,6 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import { Button } from "./Buttons.js";
-import AddTask from "./addTask.js";
-import Breakdown from "./breakdown.js";
-import ProfileDrawer from "./sideBar.js";
 import {isThisPeriod, getDate} from "./dateTimeHelpers.js";
-import HistoryTable from "./historyTable.js";
 import {GetData} from "./getData";
 
 const Plan = styled.div`
@@ -89,9 +84,9 @@ export default class ReviewTab extends Component{
     var deletedTasks = 0;
 
     for(var i=0; i<totalTasks; i++){
-            if(tasklist[i].status=='complete'){
+            if(tasklist[i].status==='complete'){
                 completedTasks++;
-            }else if(tasklist[i].status=='deleted' ){
+            }else if(tasklist[i].status==='deleted' ){
                 deletedTasks++;
             }
     }

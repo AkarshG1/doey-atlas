@@ -1,6 +1,5 @@
 import React from 'react';
 import Drawer from 'material-ui/Drawer';
-import {MenuItem} from 'material-ui/Menu';
 import styled from "styled-components";
 import {Button} from "./Buttons.js";
 import Profile from "./profile.js";

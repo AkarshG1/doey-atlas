@@ -1,13 +1,10 @@
-import React,{Component} from "react";
+import React from "react";
 import styled from "styled-components";
 import {postData} from "./postData.js";
-import {Redirect} from "react-router-dom";
 import Switch from 'material-ui/Switch';
-import Drawer from 'material-ui/Drawer';
-import Button from 'material-ui/Button';
 import Paper from 'material-ui/Paper';
-import {MenuList,MenuItem} from 'material-ui/Menu';
-import { ListItemIcon, ListItemText } from 'material-ui/List';
+import {MenuItem} from 'material-ui/Menu';
+import {ListItemText } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
@@ -19,33 +16,14 @@ const style = {
   textAlign: 'left'
 };
 
-
-const userData = localStorage.getItem('userData')?JSON.parse(localStorage.getItem('userData')):{email:'',profile:'',name:''};
-
-
-const theme = ["#0ae", "0ea"];
 function calendarSync(){
     postData('calendar/sync',"");
     window.location.href="https://doey-atlas-back-end.herokuapp.com/calendar/sync";
 }
 
-
-var ThemeClicked = true;
-
 const Name = styled.h3`
   color: #333;
 `;
-
-
-function Automation(props) {
-  return (
-    <li>
-      <Switch
-      label="Automation"
-      />
-    </li>
-  );
-}
 
 export default function Profile (props){
 
@@ -69,7 +47,7 @@ export default function Profile (props){
               </MenuItem>
               <Divider />
               <MenuItem>
-                <ListItemText primary="Logout" onClick={()=>(localStorage.clear('auth_token'),window.location="/")} />
+                <ListItemText primary="Logout" onClick={()=>(localStorage.clear('auth_token') , window.location="/")} />
               </MenuItem>
 
               </Paper>
@@ -77,12 +55,3 @@ export default function Profile (props){
       );
 
 }
-
-/*                  <h3>Coming Soon:</h3>
-                <li>Auto Scheduling</li>
-                <li>Time use breakdown</li>
-                <li>Task Collaboration</li>
-                <li>Auto meetings</li>
-                <Theme theme={props.theme} />
-                <hr />
-                <Automation state={props.automation} />*/

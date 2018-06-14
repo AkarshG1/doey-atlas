@@ -1,9 +1,8 @@
 import React,{Component} from "react";
 import App from "./App.js";
 import styled from "styled-components";
-import {postData} from './postData.js';
 import GoogleLogin from 'react-google-login';
-import {BrowserRouter,Route,Switch,Router,Redirect} from 'react-router-dom';
+import {Route,Redirect} from 'react-router-dom';
 import axios from 'axios';
 import {GetData} from "./getData.js";
 
@@ -31,12 +30,6 @@ const Login = styled.div`
         align-self:center;
         justify-self:center;
     }
-`;
-
-const SplashText = styled.p`
-    text-align: center;
-    font-family: Monospace;
-    color: #0ae;
 `;
 
 const Header = styled.nav`

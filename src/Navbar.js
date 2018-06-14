@@ -1,18 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import {Button} from "./Buttons.js";
 import {NavLink} from "react-router-dom";
 import ProfileDrawer from "./sideBar.js";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 const baseURL = "'https://doey-atlas.herokuapp.com/'";
-const tabs  = {
-    Doey : baseURL + "doey",
-    Plan : baseURL + "plan",
-    Review : baseURL + "review"
-}
-
-var userAvatar = localStorage.getItem('userData')?JSON.parse(localStorage.getItem('userData')).provider_pic:'';
 
 const Header = styled.nav`
   background-color: #333;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./Buttons.js";
 import Done from '@material-ui/icons/Done';
 import IconButton from 'material-ui/IconButton';
 

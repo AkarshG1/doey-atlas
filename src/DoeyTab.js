@@ -2,14 +2,11 @@ import React, { Component } from "react";
 import Task from "./CurrTask.js";
 import styled from "styled-components";
 import SubTask from "./subtasks.js";
-import { Button } from "./Buttons.js";
 import UpcomingTask from "./upcomingTask.js";
 import AddSubTask from "./todo.js";
 import {GetData} from "./getData.js";
 import {postData} from "./postData.js";
-import {isToday,isTomorrow,getTime,isLater,isBackLog,getDate} from "./dateTimeHelpers.js";
-import {Redirect,Link} from "react-router-dom";
-
+import {isToday,isTomorrow,isLater,isBackLog} from "./dateTimeHelpers.js";
 
 const Execute = styled.div`
   max-height: 850px;
