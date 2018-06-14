@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 import ProfileDrawer from "./sideBar.js";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-const baseURL = "http://localhost:3000/";
+const baseURL = "'https://doey-atlas.herokuapp.com/'";
 const tabs  = {
     Doey : baseURL + "doey",
     Plan : baseURL + "plan",

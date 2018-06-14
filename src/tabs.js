@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-const baseURL = "http://localhost:3000/";
+const baseURL = "'https://doey-atlas.herokuapp.com/'";
 const tabs  = {
     Doey : baseURL + "doey",
     Plan : baseURL + "plan",

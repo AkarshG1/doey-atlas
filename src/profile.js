@@ -26,7 +26,7 @@ const userData = localStorage.getItem('userData')?JSON.parse(localStorage.getIte
 const theme = ["#0ae", "0ea"];
 function calendarSync(){
     postData('calendar/sync',"");
-    window.location.href="http://localhost:5000/calendar/sync";
+    window.location.href="https://doey-atlas-back-end.herokuapp.com/calendar/sync";
 }
 
 
