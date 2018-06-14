@@ -182,7 +182,7 @@ export default class Splash extends Component{
         let gData;
         let BaseURL = 'https://doey-atlas-back-end.herokuapp.com/';
 
-        console.log("Logging in");
+        console.log(googleResponse);
 
         if (googleResponse.w3.U3) {
             gData = {
