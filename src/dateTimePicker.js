@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 
 export default function DateTimePicker2(props){
     return (
-        <form className={classes.container} noValidate>
+        <form>
           <TextField
             id="datetime-local"
             label={props.text}
