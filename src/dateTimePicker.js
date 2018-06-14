@@ -1,20 +1,26 @@
 import React, { Fragment, PureComponent } from 'react';
-
-import TextField from '@material-ui/core/TextField';
+import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils';
+import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider';
+import { DateTimePicker } from 'material-ui-pickers';
 
 export default function DateTimePicker2(props){
     return (
-        <form>
-          <TextField
-            id="datetime-local"
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+        <Fragment>
+          <DateTimePicker
+            autoOk={true}
+            animateYearScrolling={true}
+            disablePast={true}
+            minDateMessage={''}
+            ampm={false}
+            value={props.datetime}
+            onChange={props.onTimeChange}
             label={props.text}
-            type="datetime-local"
-            defaultValue="YYYY-MM-24THH:MM"
-            InputLabelProps={{
-              shrink: true,
-            }}
+            maxDate={props.maxDate}
+            minDate={props.minDate}
           />
-        </form>
+        </Fragment>
+        </MuiPickersUtilsProvider>
     );
 
 }
